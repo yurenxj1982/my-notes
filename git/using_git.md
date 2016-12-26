@@ -85,4 +85,25 @@ git rm <file>
 ```
 
 
+# 使用远程库
+
+## 克隆远程库
+
+``` shell
+git clone <url>
+```
+
+
+## 本地库关联远程库
+
+``` shell
+git remove add origin <url>
+```
+
+## 本地库推送到远程库
+
+``` shell
+git push origin master
+```
+
 
