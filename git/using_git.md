@@ -106,4 +106,10 @@ git remove add origin <url>
 git push origin master
 ```
 
+## 本地库从远程库拉取更新(fetch)并合并(merge)
+
+``` shell
+git pull
+```
+
 
