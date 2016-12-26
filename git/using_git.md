@@ -112,4 +112,44 @@ git push origin master
 git pull
 ```
 
+# 分支操作
+
+## 创建分支并切换
+
+``` shell
+git checkout -b <branch name>
+```  
+相当于  
+``` shell
+git branch <branch name>
+git checkout <branch name>
+```
+
+## 查看分支
+
+``` shell
+git branch
+```
+
+## 切换分支
+
+``` shell
+git checkout <branch name>
+```
+
+## 分支合并
+
+``` shell
+git merge <from branch name>
+```
+
+## 删除分支
+
+``` shell
+git branch -d <branch name>
+```
+
+
+
+
 
