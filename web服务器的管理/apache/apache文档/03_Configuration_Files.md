@@ -23,9 +23,9 @@ Server也会读取一个定义MIME文件类型的文件. 这个文件的文件�
 
 ## Modules
 
-Apache HTTP Server 是模块化的服务器。核心服务只包含基本的功能。扩展功能通过加载模块实现。
-	1. 默认情况下，编译时仅包含基本的模块集. 动态加载的模块(dynamically loaded modules)被分割编译, 通过```LoadModule```指令进行加载. 否则，Server需要在编译时添加／去掉模块.
-	2. 配置依赖于某个模块的指令时，可以用```<IfModule>```块。```<IfModle>```并不是必须的，不过很多时候这会掩盖你丢失重要模块的事实.
+Apache HTTP Server 是模块化的服务器。核心服务只包含基本的功能。扩展功能通过加载模块实现。  
+	1. 默认情况下，编译时仅包含基本的模块集. 动态加载的模块(dynamically loaded modules)被分割编译, 通过```LoadModule```指令进行加载. 否则，Server需要在编译时添加／去掉模块.  
+	2. 配置依赖于某个模块的指令时，可以用```<IfModule>```块。```<IfModle>```并不是必须的，不过很多时候这会掩盖你丢失重要模块的事实.  
 
 命令行```-l```参数可以看到编译进Server的模块。```-M```参数可以看到当前加载的模块.
 
@@ -40,10 +40,10 @@ Apache HTTP Server 是模块化的服务器。核心服务只包含基本的功�
 
 ## .htaccess File
 
-Apache HTTP Server 可以通过分布在web tree中的.htaccess文件管理分散的配置.
-	* .htaccess文件名可以通过```AccessFileName```指令进行配置. 
-	* 配置在.htaccess文件中的指令其作用域为.htaccess文件所在目录及子目录。
-	* .htaccess语法与主配置文件语法一致
-	* .htaccess会在每次请求时读入，其修改立即起效
-	* Server管理员可以通过在主配置文件中配置```AllowOverride```指令配置.htaccess可以使用的指令
+Apache HTTP Server 可以通过分布在web tree中的.htaccess文件管理分散的配置.  
+	* .htaccess文件名可以通过```AccessFileName```指令进行配置.   
+	* 配置在.htaccess文件中的指令其作用域为.htaccess文件所在目录及子目录。  
+	* .htaccess语法与主配置文件语法一致  
+	* .htaccess会在每次请求时读入，其修改立即起效  
+	* Server管理员可以通过在主配置文件中配置```AllowOverride```指令配置.htaccess可以使用的指令  
 
